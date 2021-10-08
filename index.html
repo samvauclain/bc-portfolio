@@ -5,12 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+
     <title>Portolio for Sam Place</title>
 </head>
 <body>
-    <nav>
-        <div><span class="material-icons">extension</span> Portolio for Sam Place</div>
-    </nav>
+    <header>
+        <p><span class="material-icons">extension</span> Sam Place</p>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-items">About</a></li>
+                <li><a href="#" class="nav-items">About</a></li>
+                <li><a href="#" class="nav-items">About</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section>
             
@@ -18,3 +30,64 @@
     </main>
 </body>
 </html>
+
+<style>
+
+:root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color:#e5e7eb;
+}
+
+ header {
+     display:flex;
+     justify-content:space-between;
+     padding:0.5rem 1rem;
+     box-shadow: 0px 2px 1px #ccc;
+     z-index:9999;
+     background-color:#fff;
+ }
+
+ header p, .material-icons {
+     font-size:2rem;
+ }
+
+ .material-icons {
+     align-content:flex-end;
+     position: relative;
+     top: 4px;
+ }
+
+ nav {
+     margin: 7px 0;
+ }
+
+ nav ul {
+     display:flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+     list-style: none;
+ }
+
+ nav ul li {
+     padding: .5rem;
+ }
+
+.nav-items {
+    text-decoration:none;
+    color:unset;
+}
+
+</style>
