@@ -1,0 +1,120 @@
+:root {
+    --light-color: #fff;
+    --box-shadow-bottom: 0px 2px 1px #ccc;
+    --section-margin:1rem auto 0 auto;
+    --section-padding:4rem 0;
+    --content-margin:2rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color:#e5e7eb;
+}
+
+ header {
+     display:flex;
+     justify-content:space-between;
+     padding:0.5rem 1rem;
+     box-shadow:var(--box-shadow-bottom);
+     z-index:9999;
+     background-color:#fff;
+ }
+
+ header p, .material-icons {
+     font-size:2rem;
+ }
+
+ .material-icons {
+     align-content:flex-end;
+     position: relative;
+     top: 4px;
+ }
+
+ nav {
+     margin: 7px 0;
+ }
+
+ nav ul {
+     display:flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+     list-style: none;
+ }
+
+ nav ul li {
+     padding: .5rem;
+ }
+
+.nav-items {
+    text-decoration:none;
+    color:unset;
+}
+
+.hero {
+    color:var(--light-color);
+    height:100%;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-content:center;
+}
+
+.hero div {
+    padding: var(--section-padding);
+}
+
+.animation-gradient {
+    background: linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: -webkit-linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: -moz-linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab);
+    position: relative;
+    background-size: 400% 400%;
+    animation: change 10s ease-in-out infinite;
+}
+
+@keyframes change {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+
+.container {
+    max-width:1280px;
+    margin: var(--section-margin);
+    background-color:var(--light-color);
+    box-shadow:var(--box-shadow-bottom);
+    padding: var(--section-padding);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap:wrap;
+}  
+
+.content {
+    margin:var(--content-margin);
+} 
+
+.xl-icon {
+    font-size: 4rem;
+}
+
+.xl-txt {
+    font-size:1.8rem;
+}
+
+.lg-txt {
+    font-size:1.45rem;
+}
