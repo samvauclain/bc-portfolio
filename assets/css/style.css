@@ -1,3 +1,4 @@
+/* Look into css variable polyfill for Internet Explorer */
 :root {
     --light-color: #fff;
     --box-shadow-bottom: 0px 2px 1px #ccc;
@@ -15,6 +16,10 @@
 body {
     font-family: 'Oswald', sans-serif;
     background-color:#e5e7eb;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    padding:.25rem;
 }
 
  header {
@@ -70,6 +75,15 @@ body {
     padding: var(--section-padding);
 }
 
+.static-gradient {
+    background: #000;
+    background: linear-gradient(to right, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: -webkit-linear-gradient(to right, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: -moz-linear-gradient(to right, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .animation-gradient {
     background: linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab);
     background: -webkit-linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -91,16 +105,19 @@ body {
     }
   }
 
-.container {
+  .container {
     max-width:1280px;
     margin: var(--section-margin);
-    background-color:var(--light-color);
-    box-shadow:var(--box-shadow-bottom);
     padding: var(--section-padding);
     display:flex;
     justify-content: center;
     align-items:center;
     flex-wrap:wrap;
+}  
+
+.container-fill-light {
+    background-color:var(--light-color);
+    box-shadow:var(--box-shadow-bottom);
 }  
 
 .content {
