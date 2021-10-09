@@ -4,6 +4,7 @@
     --box-shadow-bottom: 0px 2px 1px #ccc;
     --section-margin:1rem auto 0 auto;
     --section-padding:4rem 0;
+    --section-padding-2:4rem;
     --content-margin:2rem;
 }
 
@@ -105,15 +106,21 @@ h1,h2,h3,h4,h5,h6,p {
     }
   }
 
-  .container {
-    max-width:1280px;
+.container, .container-sm {
     margin: var(--section-margin);
-    padding: var(--section-padding);
     display:flex;
-    justify-content: center;
     align-items:center;
     flex-wrap:wrap;
+}
+
+.container {
+    max-width:1280px;
+    padding: var(--section-padding);
 }  
+
+.container-sm {
+    padding: var(--section-padding-2);
+}
 
 .container-fill-light {
     background-color:var(--light-color);
