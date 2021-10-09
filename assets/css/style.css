@@ -5,33 +5,13 @@
     --section-margin:1rem auto 0 auto;
     --section-padding:4rem 0;
     --section-padding-2:4rem;
-    -content-margin-:2rem 0;
+    --content-margin-:2rem 0;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-@media screen and (min-width:768px){
-    .container, .container-sm {
-        display:flex;
-        align-items:center;
-        flex-wrap:wrap;
-    }
-
-    .content-equal {
-        padding:2rem;
-        margin:.4rem auto;
-    }
-
-    .container-nested {
-        display: flex;
-        margin: 2rem;
-        align-items: center;
-        flex:1;
-    }
 }
 
 body {
@@ -141,6 +121,10 @@ h1,h2,h3,h4,h5,h6,p {
     text-align:center;
 }
 
+.container-sm, .container-nested {
+    margin-bottom:1rem;
+}
+
 .container-fill-light {
     background-color:var(--light-color);
     box-shadow:var(--box-shadow-bottom);
@@ -153,10 +137,8 @@ h1,h2,h3,h4,h5,h6,p {
 } 
 
 .content-equal {
-    margin:var(--content-margin);
     padding: 1rem;
     flex:1;
-    margin:.2rem;
 } 
 
 .xl-icon {
@@ -169,4 +151,39 @@ h1,h2,h3,h4,h5,h6,p {
 
 .lg-txt {
     font-size:1.45rem;
+}
+
+@media screen and (min-width:768px){
+    .container, .container-sm {
+        display:flex;
+        align-items:center;
+        flex-wrap:wrap;
+    }
+
+    .container-nested {
+        padding:1.25rem;
+        display: flex;
+        align-items: center;
+        text-align:left;
+        flex:1;
+    }
+
+    .container-sm, .container-nested {
+        margin-right: .4rem;
+    }
+
+    .content-equal {
+        padding:2rem;
+    }
+}
+
+@media screen and (min-width:960px) {
+    .container-sm:last-of-type, .container-nested:last-of-type {
+        margin-right: 0;
+    }
+
+    .container-sm, .container-nested {
+        padding:2rem;
+        margin-bottom:0;
+    }
 }
