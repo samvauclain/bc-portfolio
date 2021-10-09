@@ -5,13 +5,33 @@
     --section-margin:1rem auto 0 auto;
     --section-padding:4rem 0;
     --section-padding-2:4rem;
-    --content-margin:2rem;
+    -content-margin-:2rem 0;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+@media screen and (min-width:768px){
+    .container, .container-sm {
+        display:flex;
+        align-items:center;
+        flex-wrap:wrap;
+    }
+
+    .content-equal {
+        padding:2rem;
+        margin:.4rem auto;
+    }
+
+    .container-nested {
+        display: flex;
+        margin: 2rem;
+        align-items: center;
+        flex:1;
+    }
 }
 
 body {
@@ -106,20 +126,19 @@ h1,h2,h3,h4,h5,h6,p {
     }
   }
 
-.container, .container-sm {
-    margin: var(--section-margin);
-    display:flex;
-    align-items:center;
-    flex-wrap:wrap;
-}
-
 .container {
     max-width:1280px;
-    padding: var(--section-padding);
+    margin: var(--section-margin);
+    /* padding: var(--section-padding); */
 }  
 
 .container-sm {
     padding: var(--section-padding-2);
+}
+
+.container-nested {
+    display:block;
+    text-align:center;
 }
 
 .container-fill-light {
@@ -130,11 +149,14 @@ h1,h2,h3,h4,h5,h6,p {
 /* no flex values set, so the items group together inestead of taking the full width */
 .content-fluid {
     margin:var(--content-margin);
+    padding: 2rem;
 } 
 
 .content-equal {
     margin:var(--content-margin);
+    padding: 1rem;
     flex:1;
+    margin:.2rem;
 } 
 
 .xl-icon {
