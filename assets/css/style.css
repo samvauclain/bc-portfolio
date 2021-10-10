@@ -20,16 +20,13 @@ body {
 
 img {
     margin:0 auto .5rem auto;
+    width:100%;
 }
 
 .dashboard-background {
     padding:1rem 0 2rem 0;
     background-color:#e5e7eb;
 }
-
-.card {
-    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
-  }
 
 h1,h2,h3,h4,h5,h6,p {
     padding:.25rem;
@@ -103,8 +100,9 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .card-color-1 {
-    border-left:1px solid #062d3b;
+    border-left:1px solid #062d3b; 
     border-bottom:1px solid #062d3b;
+    /* background-color:#2ea3cd; */
 }
 
 .hero div {
@@ -188,6 +186,22 @@ h1,h2,h3,h4,h5,h6,p {
     flex-basis:30%;
 }
 
+.card {
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
+  }
+
+  .button-1 {
+    background-color:#111;
+    padding:.7rem;
+    margin-top:.6rem;
+    align-self:flex-end;
+}
+
+.button-1 a {
+    color:#fff;
+    text-decoration:none;
+}  
+
 
 .xl-icon {
     font-size: 6rem;
@@ -204,7 +218,7 @@ h1,h2,h3,h4,h5,h6,p {
 @media screen and (min-width:768px){
     .container, .container-sm {
         display:flex;
-        align-items:center;
+        align-items:stretch;
         flex-wrap:wrap;
     }
 
