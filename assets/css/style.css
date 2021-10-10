@@ -76,7 +76,8 @@ h1,h2,h3,h4,h5,h6,p {
     height:100%;
     display:flex;
     justify-content:center;
-    align-content:center;
+    align-items:center;
+    flex-wrap: wrap;
 }
 
 .hero {
@@ -85,7 +86,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .xl-bg {
-    padding:6rem 0;
+    padding:3rem 0;
 }
 
 .xl-bgc-2 {
@@ -95,13 +96,13 @@ h1,h2,h3,h4,h5,h6,p {
     position: relative;
     background-size: 400% 400%;
     animation: change 10s ease-in-out infinite;
-    background-color:#23a6d5;
-    color:#062d3b;
+    /* background-color:#333; */
+    /* color:#fff; */
 }
 
 .card-color-1 {
-    border-left:1px solid #062d3b; 
-    border-bottom:1px solid #062d3b;
+    /* border-left:1px solid #062d3b; 
+    border-bottom:1px solid #062d3b; */
     /* background-color:#2ea3cd; */
 }
 
@@ -215,6 +216,10 @@ h1,h2,h3,h4,h5,h6,p {
     font-size:1.45rem;
 }
 
+.feature-img {
+    flex-basis:100%;
+}
+
 @media screen and (min-width:768px){
     .container, .container-sm {
         display:flex;
@@ -236,6 +241,9 @@ h1,h2,h3,h4,h5,h6,p {
 
     .content-equal {
         padding:1.25rem;
+    }
+    .feature-img {
+        flex-basis:45%;
     }
 }
 
