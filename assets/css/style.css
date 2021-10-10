@@ -15,13 +15,16 @@
 }
 
 body {
-    background-color:#e5e7eb;
     font-family: 'Open Sans', sans-serif;
 }
 
+.dashboard-background {
+    padding:1rem 0 2rem 0;
+    background-color:#e5e7eb;
+}
+
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
   }
 
 h1,h2,h3,h4,h5,h6,p {
@@ -82,17 +85,16 @@ h1,h2,h3,h4,h5,h6,p {
 
 .xl-bg {
     padding:6rem 0;
-    margin-top:1rem;
 }
 
 .xl-bgc-2 {
-    background: linear-gradient(-45deg, #23a6d5, #23d5ab, #81dafa);
+    /* background: linear-gradient(-45deg, #23a6d5, #23d5ab, #81dafa);
     background: -webkit-linear-gradient(-45deg, #23a6d5, #23d5ab, #81dafa);
-    background: -moz-linear-gradient(-45deg, #23a6d5, #23d5ab, #81dafa);
+    background: -moz-linear-gradient(-45deg, #23a6d5, #23d5ab, #81dafa); */
     position: relative;
     background-size: 400% 400%;
     animation: change 10s ease-in-out infinite;
-    /* background-color:#23a6d5; */
+    background-color:#23a6d5;
     color:#062d3b;
 }
 
