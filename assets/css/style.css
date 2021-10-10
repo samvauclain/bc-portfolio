@@ -93,11 +93,16 @@ h1,h2,h3,h4,h5,h6,p {
     /* background: linear-gradient(-45deg, #23a6d5, #23d5ab, #81dafa);
     background: -webkit-linear-gradient(-45deg, #23a6d5, #23d5ab, #81dafa);
     background: -moz-linear-gradient(-45deg, #23a6d5, #23d5ab, #81dafa); */
-    position: relative;
+    /* position: relative;
     background-size: 400% 400%;
-    animation: change 10s ease-in-out infinite;
+    animation: change 10s ease-in-out infinite; */
     /* background-color:#333; */
     /* color:#fff; */
+}
+
+.container-fill-dark-1 {
+    background-color:#000;
+    color:#fff;
 }
 
 .card-color-1 {
@@ -111,7 +116,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .xl-bg div {
-    padding:4rem 2rem;
+    padding:2rem;
 }
 
 .static-gradient {
@@ -166,7 +171,11 @@ h1,h2,h3,h4,h5,h6,p {
 .container-fill-light {
     background-color:var(--light-color);
     /* box-shadow:var(--box-shadow-bottom); */
-}  
+} 
+
+.clear-space {
+    margin:0;
+}
 
 /* no flex values set, so the items group together inestead of taking the full width */
 .content-fluid {
