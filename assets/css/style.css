@@ -169,7 +169,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .container-nested {
-    display:block;
+    /* display:block; */
     text-align:center;
 }
 
@@ -243,19 +243,35 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .offsest-box-color-1 {
-    box-shadow: -30px 30px 0px #23a6d5;
+    box-shadow: -30px -30px 0px #23a6d5;
 }
 
 .offsest-box-color-2 {
-    box-shadow: -30px 30px 0px #ee7752;
+    box-shadow: -30px -30px 0px #ee7752;
 }
 
 .offsest-box-color-3 {
-    box-shadow: -30px 30px 0px #23d5ab;
+    box-shadow: -30px -30px 0px #23d5ab;
 }
 
 .offsest-box-color-4 {
-    box-shadow: -30px 30px 0px #e73c7e;
+    box-shadow: -30px -30px 0px #e73c7e;
+}
+
+.offsest-box-color-1-sm {
+    box-shadow: -10px -10px 0px #23a6d5;
+}
+
+.offsest-box-color-2-sm {
+    box-shadow: -10px -10px 0px #ee7752;
+}
+
+.offsest-box-color-3-sm {
+    box-shadow: -10px -10px 0px #23d5ab;
+}
+
+.offsest-box-color-4-sm {
+    box-shadow: -10px -10px 0px #e73c7e;
 }
 
 .xl-txt {
