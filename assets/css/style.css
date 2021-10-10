@@ -18,6 +18,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+img {
+    margin:0 auto .5rem auto;
+}
+
 .dashboard-background {
     padding:1rem 0 2rem 0;
     background-color:#e5e7eb;
