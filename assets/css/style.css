@@ -23,6 +23,11 @@ img {
     width:100%;
 }
 
+a {
+    text-decoration:none;
+    color:unset;
+}
+
 .icon-section img {
     width:100px;
 }
@@ -63,17 +68,38 @@ h1,h2,h3,h4,h5,h6,p {
      box-shadow:var(--box-shadow-bottom);
      z-index:9999;
      background-color:#fff;
+     position: fixed;
+     top:0;
+     width:100%;
  }
 
  header p, .material-icons {
      font-size:2rem;
  }
 
+ #about, #work, #contact {
+    scroll-margin-top: 4.5rem; 
+  }
+
  .material-icons {
      align-content:flex-end;
      position: relative;
-     top: 4px;
+     top: 0px;
  }
+
+ .fa-icons {
+     font-size:3rem;
+     padding:1.5rem;
+     margin-top:2rem;
+ }
+
+ .fa-icons::before {
+    content: "";
+ }
+
+main {
+    margin-top:6rem;
+}
 
  nav {
      margin: 7px 0;
@@ -241,18 +267,22 @@ h1,h2,h3,h4,h5,h6,p {
 
 .bg-color-1 {
     background-color:#23a6d5;
+    color:#fff;
 }
 
 .bg-color-2 {
     background-color:#ee7752;
+    color:#fff;
 }
 
 .bg-color-3 {
     background-color:#147e65;
+    color:#fff;
 }
 
 .bg-color-4 {
     background-color:#e73c7e;
+    color:#fff;
 }
 
 .offsest-box-color-1 {
