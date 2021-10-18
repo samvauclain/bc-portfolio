@@ -29,7 +29,7 @@ a {
 }
 
 .icon-section img {
-    width:100px;
+    width:75px;
 }
 
 .icon-section div {
@@ -322,7 +322,7 @@ main {
 }
 
 .lg-txt {
-    font-size:1.45rem;
+    font-size:1.2rem;
 }
 
 .feature {
@@ -379,6 +379,10 @@ main {
 
     .content-gte-4 {
         flex: 0 1 48%;
+    }
+
+    .icon-section img {
+        width:50px;
     }
 }
 
