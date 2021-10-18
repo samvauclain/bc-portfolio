@@ -8,3 +8,5 @@ Tried to make a flex template that I can build on, and use for future projects. 
 * Look for some graphic / flat art to incorporate on https://unsplash.com/
 * Link logo to go back to top
 * Mobile hamburger menu
+
+https://samvauclain.github.io/bc-portfolio/
